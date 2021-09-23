@@ -15,6 +15,9 @@
 		F6E7486326FCDFFC00AC63BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E7486126FCDFFC00AC63BB /* LaunchScreen.storyboard */; };
 		F6E7486E26FCDFFC00AC63BB /* SwiftPhotoMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7486D26FCDFFC00AC63BB /* SwiftPhotoMapTests.swift */; };
 		F6E7487926FCDFFC00AC63BB /* SwiftPhotoMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7487826FCDFFC00AC63BB /* SwiftPhotoMapUITests.swift */; };
+		F6E7488826FCEFA900AC63BB /* PhotoMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7488726FCEFA900AC63BB /* PhotoMapViewController.swift */; };
+		F6E7488A26FCEFB900AC63BB /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7488926FCEFB900AC63BB /* LocationsViewController.swift */; };
+		F6E7488D26FD2BED00AC63BB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E7488C26FD2BED00AC63BB /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		F6E7487426FCDFFC00AC63BB /* SwiftPhotoMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPhotoMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E7487826FCDFFC00AC63BB /* SwiftPhotoMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPhotoMapUITests.swift; sourceTree = "<group>"; };
 		F6E7487A26FCDFFD00AC63BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6E7488726FCEFA900AC63BB /* PhotoMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMapViewController.swift; sourceTree = "<group>"; };
+		F6E7488926FCEFB900AC63BB /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		F6E7488C26FD2BED00AC63BB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6E7488D26FD2BED00AC63BB /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +90,7 @@
 				F6E7486C26FCDFFC00AC63BB /* SwiftPhotoMapTests */,
 				F6E7487726FCDFFC00AC63BB /* SwiftPhotoMapUITests */,
 				F6E7485426FCDFF400AC63BB /* Products */,
+				F6E7488B26FD2BED00AC63BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +107,7 @@
 		F6E7485526FCDFF400AC63BB /* SwiftPhotoMap */ = {
 			isa = PBXGroup;
 			children = (
+				F6E7488626FCEF8C00AC63BB /* View Controllers */,
 				F6E7485626FCDFF400AC63BB /* AppDelegate.swift */,
 				F6E7485826FCDFF400AC63BB /* SceneDelegate.swift */,
 				F6E7485A26FCDFF400AC63BB /* ViewController.swift */,
@@ -126,6 +135,23 @@
 				F6E7487A26FCDFFD00AC63BB /* Info.plist */,
 			);
 			path = SwiftPhotoMapUITests;
+			sourceTree = "<group>";
+		};
+		F6E7488626FCEF8C00AC63BB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F6E7488726FCEFA900AC63BB /* PhotoMapViewController.swift */,
+				F6E7488926FCEFB900AC63BB /* LocationsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F6E7488B26FD2BED00AC63BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6E7488C26FD2BED00AC63BB /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +285,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6E7485B26FCDFF400AC63BB /* ViewController.swift in Sources */,
+				F6E7488A26FCEFB900AC63BB /* LocationsViewController.swift in Sources */,
 				F6E7485726FCDFF400AC63BB /* AppDelegate.swift in Sources */,
+				F6E7488826FCEFA900AC63BB /* PhotoMapViewController.swift in Sources */,
 				F6E7485926FCDFF400AC63BB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
