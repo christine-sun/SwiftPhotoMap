@@ -18,6 +18,7 @@
 		F6E7488826FCEFA900AC63BB /* PhotoMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7488726FCEFA900AC63BB /* PhotoMapViewController.swift */; };
 		F6E7488A26FCEFB900AC63BB /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7488926FCEFB900AC63BB /* LocationsViewController.swift */; };
 		F6E7488D26FD2BED00AC63BB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E7488C26FD2BED00AC63BB /* MapKit.framework */; };
+		F6E7489026FD79FE00AC63BB /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7488F26FD79FE00AC63BB /* LocationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		F6E7488726FCEFA900AC63BB /* PhotoMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMapViewController.swift; sourceTree = "<group>"; };
 		F6E7488926FCEFB900AC63BB /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		F6E7488C26FD2BED00AC63BB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F6E7488F26FD79FE00AC63BB /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		F6E7485526FCDFF400AC63BB /* SwiftPhotoMap */ = {
 			isa = PBXGroup;
 			children = (
+				F6E7488E26FD79B900AC63BB /* Views */,
 				F6E7488626FCEF8C00AC63BB /* View Controllers */,
 				F6E7485626FCDFF400AC63BB /* AppDelegate.swift */,
 				F6E7485826FCDFF400AC63BB /* SceneDelegate.swift */,
@@ -152,6 +155,14 @@
 				F6E7488C26FD2BED00AC63BB /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6E7488E26FD79B900AC63BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6E7488F26FD79FE00AC63BB /* LocationCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6E7489026FD79FE00AC63BB /* LocationCell.swift in Sources */,
 				F6E7485B26FCDFF400AC63BB /* ViewController.swift in Sources */,
 				F6E7488A26FCEFB900AC63BB /* LocationsViewController.swift in Sources */,
 				F6E7485726FCDFF400AC63BB /* AppDelegate.swift in Sources */,
