@@ -11,6 +11,7 @@ import MapKit
 class PhotoMapViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
+    var thisImage:UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,20 +34,23 @@ class PhotoMapViewController: UIViewController, UIImagePickerControllerDelegate,
         let editedImage = info[UIImagePickerController.InfoKey.editedImage] as! UIImage
         
         // Do something with the images (based on your use case)
-        // USE EDITED IMAGE
+        thisImage = editedImage
         
         // Dismiss UIImagePickerController to go back to your original view controller
         dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: "tagSegue", sender: nil)
     }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "tagSegue" {
+            let vc = segue.destination as? LocationsViewController
+//            vc?.delegate = self
+        }
     }
-    */
 
 }
